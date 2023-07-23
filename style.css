@@ -41,6 +41,7 @@
     --black-2: #0F241B;
     --green: #14B757;
     --green-1: #03A84E;
+    --yellow: #FFEBB2;
     --light-green: #E9FBF2;
     --light-green-2: #F6FFFA;
     --light-purple: #E5E9FC;
@@ -107,7 +108,13 @@ h1 {
 .top-wrap p,
 .summary,
 .plan-details h2,
-.plan-details button {
+.plan-details button,
+.plan p:nth-child(1),
+.plan p:nth-child(2),
+.plan button,
+.choose-top p,
+.choose-top button,
+.alert-info p {
     font-family: var(--pry-font);
 }
 
@@ -128,7 +135,8 @@ h1 {
 }
 
 .plan-details h2,
-.plan-details button {
+.plan-details button,
+.choose-top button {
     font-weight: 500;
 }
 
@@ -154,13 +162,8 @@ h1 {
 }
 
 .plan p:nth-child(1),
-.plan p:nth-child(2),
-.plan button {
-    font-family: var(--pry-font);
-}
-
-.plan p:nth-child(1),
-.plan button {
+.plan button,
+.alert-info p {
     font-weight: 500;
 }
 
@@ -200,5 +203,40 @@ h1 {
 
 .pink {
     background-color: var(--light-pink);
+}
+
+.choose-date {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--grey-2);
+    border-top: 1px solid var(--grey-2);
+}
+
+.choose-top p{
+    font-weight: 400;
+}
+
+.choose-top p,
+.choose-top button {
+    line-height: 1.5rem;
+}
+
+.choose-top button{
+   color: var(--green-1);
+   font-size: 1rem;
+}
+
+.alert-info {
+    column-gap: 0.75rem;
+    background-color: var(--light-yellow);
+    border: 1px solid var(--yellow);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.alert-info p {
+    font-size: 0.875rem;
+    color: var(--black-2);
 }
 
