@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('./assets/fonts/CerebriSans-Regular.woff2') format('woff2'),
+        url('./assets/fonts/CerebriSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -17,4 +28,6 @@
     --light-orange: #FFF3DF;
     --light-pink: #FBE7F2;
     --light-yellow: #FFFDF5;
+    --pry-font: Cerebri Sans;
+    --sec-font: 'PT Serif', serif;
 }
