@@ -443,3 +443,66 @@ body {
     bottom: 0;
     right: 0;
 }
+
+.dashboard >div {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.food-delivery.green {
+    border-radius: 0.5rem;
+    border: 1px solid #6ECE8A;
+    margin: 1.5rem 0;
+    background-color: var(--light-green-2);
+}
+
+.food-delivery.green h2 {
+    color: var(--green-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.view-status {
+    background-color: var(--light-green);
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding: .4rem .7rem;
+    color: var(--green-1);
+    font-family: var(--pry-font);
+}
+
+.food-details {
+    column-gap: 0.625rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.food-details p {
+    font-size: 0.875rem;
+    line-height: 1.5rem; 
+}
+
+.food-details span:nth-child(1) {
+    font-weight: 400;
+    color: var(--black-1);
+}
+
+.food-details span:nth-child(3) {
+    font-weight: 500;
+    color: var(--black-2);
+}
+
+.delivery {
+    column-gap: 0.5rem;
+    border-top: 1px solid rgba(189, 238, 205, 0.50);
+    padding: 0.75rem 0;
+}
+
+.delivery time {
+    color: var(--greys-5);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;  
+}
