@@ -39,6 +39,7 @@
     --grey-2: #CBD8D2;
     --grey-3: #E2E9E6;
     --grey-4: #F9FBFA;
+    --grey-5: #1D352A;
     --black-1: #4B6358;
     --black-2: #0F241B;
     --green: #14B757;
@@ -316,7 +317,7 @@ h1 {
     margin-top: .3rem;
 }
 
-.view {
+.green-btn {
     width: 100%;
     border-radius: 2rem;
     background-color: var(--green-1);
@@ -335,4 +336,31 @@ h1 {
 .customize a {
     border-bottom: 1px solid var(--green-1);
     font-weight: 500;
+}
+
+.profile-completed img{
+    display: block;
+    margin: auto;
+}
+
+.profile-completed .title {
+    font-family: var(--sec-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black-2);
+    line-height: 2rem;
+}
+
+.profile-completed p {
+    text-align: center;
+}
+
+.profile-completed .sub-title {
+    color: var(--gray-5);
+    line-height: 1.5rem;
+    margin: 0.75rem 0 13rem;
+}
+
+.profile-completed {
+    display: none;
 }
