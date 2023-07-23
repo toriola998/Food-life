@@ -449,29 +449,52 @@ body {
 }
 
 .food-delivery.green {
-    border-radius: 0.5rem;
     border: 1px solid #6ECE8A;
     margin: 1.5rem 0;
     background-color: var(--light-green-2);
 }
 
-.food-delivery.green h2 {
-    color: var(--green-1);
+.cleaning.orange {
+    border: 1px solid #FFC260;
+    background-color:  #FFFBF5;
+}
+
+.cleaning h2 {
+    color: #FF9D00;
+}
+
+.box {
+    border-radius: 0.5rem;
+}
+
+.box h2 {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     margin-right: 0.75rem;
 }
 
+.food-delivery.green h2 {
+    color: var(--green-1);
+}
+
 .view-status {
-    background-color: var(--light-green);
     border-radius: 2rem;
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1rem;
     padding: .4rem .7rem;
-    color: var(--green-1);
     font-family: var(--pry-font);
+}
+
+.view-status.bg-green {
+    background-color: var(--light-green);
+    color: var(--green-1);
+}
+
+.view-status.bg-orange {
+    color: #FF9D00;
+    background-color: var(--light-orange);
 }
 
 .food-details {
@@ -479,7 +502,8 @@ body {
     margin: 1.5rem 0 1rem;
 }
 
-.food-details p {
+.food-details p,
+.get-ready {
     font-size: 0.875rem;
     line-height: 1.5rem; 
 }
@@ -505,4 +529,14 @@ body {
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1rem;  
+}
+
+.orange-time {
+    border-top: 1px solid rgba(255, 218, 159, 0.50);
+}
+
+.get-ready {
+    color: #000;
+    font-weight: 400;
+    padding: 1.125rem 0 1rem;
 }
