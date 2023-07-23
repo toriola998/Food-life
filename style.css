@@ -331,3 +331,8 @@ h1 {
     font-size: 0.875rem;
     margin: 2.5rem 0 1.7rem;
 }
+
+.customize a {
+    border-bottom: 1px solid var(--green-1);
+    font-weight: 500;
+}
