@@ -38,6 +38,7 @@
     --grey-1: #F0F4F2;
     --grey-2: #CBD8D2;
     --grey-3: #E2E9E6;
+    --grey-4: #F9FBFA;
     --black-1: #4B6358;
     --black-2: #0F241B;
     --green: #14B757;
@@ -74,7 +75,8 @@ button {
 }
 
 main {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0;
+    font-family: var(--pry-font);
 }
 
 .back {
@@ -105,14 +107,15 @@ h1 {
     line-height: 2rem;
 }
 
-.top-wrap p,
+/* .top-wrap p,
 .summary,
 .plan p:nth-child(2),
 .choose-top p,
 .apply-discount p:nth-child(1),
-.apply-discount p:nth-child(2) {
+.apply-discount p:nth-child(2),
+.order-summary p {
     font-family: var(--pry-font);
-}
+} */
 
 .apply-discount h2,
 .plan-details h2,
@@ -220,14 +223,31 @@ h1 {
 }
 
 .alert-info {
-    column-gap: 0.75rem;
     background-color: var(--light-yellow);
     border: 1px solid var(--yellow);
-    padding: 1rem;
-    border-radius: 0.5rem;
     margin-top: 1rem;
 }
 
+.alert-info,
+.alert-info-dark {
+    column-gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.alert-info-dark {
+    background-color: var(--grey-4);
+    border: 1px solid var(--grey-2);
+    margin: 1.5rem 0 2.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.alert-info-dark p {
+    line-height: 1.25rem;
+}
+
+.alert-info-dark p,
 .alert-info p {
     font-size: 0.875rem;
     color: var(--black-2);
@@ -267,4 +287,47 @@ h1 {
     border: 1px solid var(--grey-3);
     border-radius: 2rem;
     padding: 0.5rem 0.75rem; 
-} 
+}
+
+.green-text {
+    color: var(--green-1);
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.order-summary p:not(.total) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.total .bold {
+    font-weight: 500;
+}
+
+.order-summary-wrap .info {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--black-1);
+    margin-top: .3rem;
+}
+
+.view {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--green-1);
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-family: var(--pry-font);
+}
+
+.customize {
+    text-align: center;
+    font-size: 0.875rem;
+    margin: 2.5rem 0 1.7rem;
+}
