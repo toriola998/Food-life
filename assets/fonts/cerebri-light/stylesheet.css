@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('CerebriSans-Light.woff2') format('woff2'),
+        url('CerebriSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

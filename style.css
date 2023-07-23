@@ -8,12 +8,31 @@
 
 @font-face {
     font-family: 'Cerebri Sans';
-    src: url('./assets/fonts/CerebriSans-Regular.woff2') format('woff2'),
-        url('./assets/fonts/CerebriSans-Regular.woff') format('woff');
+    src: url('assets/fonts/cerebri-regular/CerebriSans-Regular.woff2') format('woff2'),
+        url('assets/fonts/cerebri-regular/CerebriSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('assets/fonts/cerebri-medium/CerebriSans-Medium.woff2') format('woff2'),
+        url('assets/fonts/cerebri-medium/CerebriSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('assets/fonts/cerebri-light/CerebriSans-Light.woff2') format('woff2'),
+        url('assets/fonts/cerebri-light/CerebriSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root {
     --grey-1: #F0F4F2;
@@ -28,6 +47,94 @@
     --light-orange: #FFF3DF;
     --light-pink: #FBE7F2;
     --light-yellow: #FFFDF5;
-    --pry-font: Cerebri Sans;
+    --pry-font: 'Cerebri Sans', serif;
     --sec-font: 'PT Serif', serif;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+
+button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+main {
+    padding: 2rem 1.5rem;
+}
+
+.back {
+    background-color: var(--grey-1);
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    margin-right: 4.25rem;
+}
+
+.top-wrap p{
+    text-align: center;
+    font-weight: 500;
+}
+
+h1,
+.top-wrap p {
+    color: var(--black-2);
+}
+
+h1 {
+    /*REMOVE THIS MARGIN TOP LATER**/
+    margin-top: 2rem;
+
+    font-family: var(--sec-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.top-wrap p,
+.summary,
+.plan-details h2,
+.plan-details button {
+    font-family: var(--pry-font);
+}
+
+.summary {
+    font-family: Cerebri Sans;
+    line-height: 1.5rem;
+    color: var(--black-1);
+}
+
+.plan-details h2{
+    font-size: 1rem;
+    /* line-height: 1.5rem */
+}
+
+.plan-details button {
+    color: var(--green-1);
+    font-size: 0.875rem;
+}
+
+.plan-details h2,
+.plan-details button {
+    font-weight: 500;
+}
+
+.plan-details {
+    border-bottom: 1px solid var(--grey-2);
+    padding-bottom: 1.125rem;
+    margin: 2.6rem 0 1.5rem
+}
+
