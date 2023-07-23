@@ -51,6 +51,7 @@
     --light-orange: #FFF3DF;
     --light-pink: #FBE7F2;
     --light-yellow: #FFFDF5;
+    --green-quaternary: #98DCAF;
     --pry-font: 'Cerebri Sans', serif;
     --sec-font: 'PT Serif', serif;
 }
@@ -75,7 +76,7 @@ button {
     background-color: transparent;
 }
 
-main {
+body {
     padding: 2rem 1.5rem 0;
     font-family: var(--pry-font);
 }
@@ -93,12 +94,12 @@ main {
     font-weight: 500;
 }
 
-h1,
+.home h1,
 .top-wrap p {
     color: var(--black-2);
 }
 
-h1 {
+.home h1 {
     /*REMOVE THIS MARGIN TOP LATER**/
     margin-top: 2rem;
 
@@ -363,4 +364,82 @@ h1 {
 
 .profile-completed {
     display: none;
+}
+
+.heading-top h1 {
+    font-family: var(--sec-font);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.avatar-wrap {
+    background-color: var(--light-orange);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+}
+
+.heading-top button {
+    margin-right: 1rem;
+}
+
+.btn-wrapper {
+    background-color: var(--grey-1);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: .3rem;
+    margin: 1.25rem 0 1.75rem;
+}
+
+.btn-wrapper,
+.btn-wrapper button {
+    border-radius: 0.5rem;
+}
+
+.btn-wrapper button {
+    font-size: 0.875rem;
+    font-family: var(--pry-font);
+    padding: .4rem;
+}
+
+.btn-wrapper .active {
+    background-color: #fff;
+    font-weight: 500;
+    color: var(--black-2);
+}
+
+.btn-wrapper button:not(.active) {
+    color: var(--black-1);
+}
+
+.call-us {
+    background-color: var(--green-1);
+    border-radius: 0.5rem;
+    border: 4px solid var(--green-quaternary);
+    padding: 1rem;
+}
+
+.call-us h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem; 
+}
+
+.call-us {
+    color: #fff;
+    position: relative;
+}
+
+.call-us p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; 
+}
+
+.call-us img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
