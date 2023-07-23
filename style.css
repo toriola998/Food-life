@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey-1: #F0F4F2;
+    --grey-2: #CBD8D2;
+    --black-1: #4B6358;
+    --black-2: #0F241B;
+    --green: #14B757;
+    --green-1: #03A84E;
+    --light-green: #E9FBF2;
+    --light-green-2: #F6FFFA;
+    --light-purple: #E5E9FC;
+    --light-orange: #FFF3DF;
+    --light-pink: #FBE7F2;
+    --light-yellow: #FFFDF5;
+}
