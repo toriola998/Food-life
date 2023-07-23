@@ -138,3 +138,67 @@ h1 {
     margin: 2.6rem 0 1.5rem
 }
 
+.plan {
+    border-radius: 1rem;
+    padding: 1.4rem 1rem;
+}
+
+.plan,
+.plan >div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan img { 
+    margin-right: 0.7rem;
+}
+
+.plan p:nth-child(1),
+.plan p:nth-child(2),
+.plan button {
+    font-family: var(--pry-font);
+}
+
+.plan p:nth-child(1),
+.plan button {
+    font-weight: 500;
+}
+
+.plan p:nth-child(1) {
+    margin-bottom : .6rem;
+}
+
+.plan p:nth-child(2) {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.plan button {
+    font-size: 0.875rem;
+    color: var(--black-1);
+    column-gap: .4rem;
+}
+
+.green {
+    background-color: var(--light-green);
+}
+
+.plan-wrapper {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.purple {
+    background-color: var(--light-purple);
+}
+
+.orange {
+    background-color: var(--light-orange);
+}
+
+.pink {
+    background-color: var(--light-pink);
+}
+
