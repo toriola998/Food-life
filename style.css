@@ -708,70 +708,6 @@ nav ul span:not(.green-text) {
     background: var(--green);
   }
 
-@media only screen and (min-width: 1000px) {
-    .cleaning-modal {
-        max-height: inherit;
-        overflow-y: unset;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .home,
-    .dashboard-inner-wrapper {
-        padding: 2rem 15% 0;
-    }
-
-    .home {
-        max-width: 900px;
-        margin: 0 auto;
-    }   
-}
-
-@media only screen and (min-width: 760px) {
-    .home {
-        padding: 2rem 5% 0;
-    }
-
-    .plan-wrapper {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 1rem;
-    }
-
-    .plan-wrapper,
-    .tablet-grid-1,
-    .food-and-cleaning {
-        display: grid;
-    }
-
-    .tablet-grid-1 {
-        margin: 3rem 0;
-        grid-template-columns: 43% 45%;
-        justify-content: space-between;
-    }
-
-    .dashboard-inner-wrapper {
-        padding: 0 10%;
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    .food-and-cleaning {
-        align-items: center;
-        grid-template-columns: 48.5% 48.5%;
-        justify-content: space-between;
-    }
-
-    .get-ready {
-        margin-bottom: 10%;
-    }
-
-    nav ul {
-        justify-content: space-evenly;
-        padding-top: 1rem;
-    }
-}
-
 .all-done p,
 .half-done p {
     position: relative;
@@ -838,11 +774,14 @@ ul.home-timeline .green-num{
     color: #fff;
     position: relative;
     margin: auto;
+    font-weight: 500;
+    
 }
 
 ul.home-timeline .grey-num{
     background-color: #F0F4F2;
     margin: auto;
+    font-weight: 500;
 }
 
 .bold {
@@ -851,13 +790,106 @@ ul.home-timeline .grey-num{
 
 ul.home-timeline span:nth-child(3){
     font-size: 13px;
+    margin-top: -7px;
+    display: flex;
 }
 
-/* ul.home-timeline .green-num::after {
+ul.home-timeline .green-num::after {
     content: "";
     position: absolute;
     display: block;
-    width: 20px;
+    width: 31vw;
     height: 3px;
     background-color: var(--green-1);
-} */
+    z-index: -1;
+    left: 0;
+}
+
+ul.home-timeline .grey-num-3 {
+    position: relative;
+}
+
+ul.home-timeline .grey-num-3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25vw;
+    height: 3px;
+    background-color: var(--grey-3);
+    z-index: -1;
+    left: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .home,
+    .dashboard-inner-wrapper {
+        padding: 2rem 15% 0;
+    }
+
+    .home {
+        max-width: 900px;
+        margin: 0 auto;
+    }   
+}
+
+@media only screen and (min-width: 760px) {
+    .home {
+        padding: 2rem 5% 0;
+    }
+
+    .plan-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .plan-wrapper,
+    .tablet-grid-1,
+    .food-and-cleaning {
+        display: grid;
+    }
+
+    .tablet-grid-1 {
+        margin: 3rem 0;
+        grid-template-columns: 43% 45%;
+        justify-content: space-between;
+    }
+
+    .dashboard-inner-wrapper {
+        padding: 0 10%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .food-and-cleaning {
+        align-items: center;
+        grid-template-columns: 48.5% 48.5%;
+        justify-content: space-between;
+    }
+
+    .get-ready {
+        margin-bottom: 10%;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cleaning-modal {
+        max-height: inherit;
+        overflow-y: unset;
+    }
+
+    ul.home-timeline .grey-num-3::after {
+        width: 22vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    ul.home-timeline .grey-num-3::after {
+        width: 15vw;
+    }
+}
