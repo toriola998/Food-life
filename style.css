@@ -619,11 +619,19 @@ nav ul span:not(.green-text) {
     background-color: #fff;
     border-radius: 1rem;
     padding: 1.25rem;
-    /* min-height: 550px; */
-    /* position: absolute;
-    bottom: 3.37rem; */
-    margin: 0 0.625rem;
+    margin: 0 1rem;
 }
+
+@keyframes modalActive {
+    from {transform: scale(0.5)}
+    to {transform: scale(1)}
+}
+  
+.modal.active {
+    animation-name: modalActive;
+    animation-duration: 0.2s;
+}
+
 
 .modal .date,
 .small-text {
