@@ -76,8 +76,11 @@ button {
     background-color: transparent;
 }
 
-body {
+body.dashboard {
     padding: 2rem 1.5rem 0;
+}
+
+body {
     font-family: var(--pry-font);
 }
 
@@ -92,6 +95,10 @@ body {
 .top-wrap p{
     text-align: center;
     font-weight: 500;
+}
+
+.home {
+    padding: 2rem 1.5rem 0;
 }
 
 .home h1,
@@ -344,13 +351,24 @@ a.green-btn {
     font-weight: 500;
 }
 
-.profile-completed img,
+.confetti-wrap {
+    height: 254px;
+}
+
+.confetti {
+    width: 100%;
+    height: 254px;
+    object-fit: contain;
+}
+
+.profile-inner img,
 nav ul img{
     display: block;
     margin: auto;
 }
 
 .profile-inner {
+    padding: 0 1.5rem 3rem;
     max-width: 350px;
     margin: auto;
 }
@@ -371,7 +389,7 @@ nav ul img{
 .profile-completed .sub-title {
     color: var(--gray-5);
     line-height: 1.5rem;
-    margin: 0.75rem 0 13rem;
+    margin: 0.75rem 0 5rem;
 }
 
 .profile-completed {
@@ -712,13 +730,13 @@ nav ul span:not(.green-text) {
 @media only screen and (min-width: 600px) {
     .home,
     .dashboard-inner-wrapper {
-        padding: 0 15%;
+        padding: 2rem 15% 0;
     }
 }
 
 @media only screen and (min-width: 760px) {
     .home {
-        padding: 0;
+        padding: 2rem 0 0;
         max-width: 900px;
         margin: 0 auto;
     }

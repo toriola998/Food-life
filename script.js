@@ -42,3 +42,16 @@ if(closeCleaningBtn) {
         cleaningModal.style.display = "none"
     })
 }
+
+//REMOVE GIF AFTER PAGE LOADS
+const confetti = document.querySelector('.confetti');
+if(confetti) {
+    //PAGE LOADS REALLY FAST, GIF WON'T SHOW AT ALL
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     confetti.style.display = "none"
+    // })
+
+    setTimeout(() => {
+        confetti.style.display = "none"
+    }, 4000)
+}
