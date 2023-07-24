@@ -466,6 +466,7 @@ nav ul img{
     background-color: var(--light-green-2);
 }
 
+
 .cleaning.orange {
     border: 1px solid #FFC260;
     background-color:  #FFFBF5;
@@ -477,6 +478,7 @@ nav ul img{
 
 .box {
     border-radius: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .box h2 {
@@ -586,10 +588,12 @@ nav ul span:not(.green-text) {
     right: 0;
     bottom: 0;
     left: 0;
+    display: none;
 }
 
 .food-delivery-modal {
     padding-bottom: 9rem !important;
+    display: none;
 }
 
 .modal {
@@ -706,7 +710,8 @@ nav ul span:not(.green-text) {
 }
 
 @media only screen and (min-width: 600px) {
-    .home {
+    .home,
+    .dashboard-inner-wrapper {
         padding: 0 15%;
     }
 }
@@ -725,7 +730,8 @@ nav ul span:not(.green-text) {
     }
 
     .plan-wrapper,
-    .tablet-grid-1 {
+    .tablet-grid-1,
+    .food-and-cleaning {
         display: grid;
     }
 
@@ -733,5 +739,21 @@ nav ul span:not(.green-text) {
         margin: 3rem 0;
         grid-template-columns: 43% 45%;
         justify-content: space-between;
+    }
+
+    .dashboard-inner-wrapper {
+        padding: 0 10%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .food-and-cleaning {
+        align-items: center;
+        grid-template-columns: 48.5% 48.5%;
+        justify-content: space-between;
+    }
+
+    .get-ready {
+        margin-bottom: 10%;
     }
 }
