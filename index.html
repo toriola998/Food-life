@@ -9,7 +9,7 @@
         <title>Eden life</title> 
     </head>
     <body>
-        <main>
+        <main id="home">
             <div class="home">
                 <div class="top-wrap flex">
                     <button class="flex j-center back">
@@ -83,60 +83,66 @@
                     </div>
                 </section>
                 
-                <section class="choose-date" aria-label="Choose your start date">
-                    <div class="flex j-between choose-top">
-                        <p>Start date</p>
-                        <button>Choose your start date</button>
-                    </div>
-                
-                    <div class="alert-info flex">
-                        <img src="assets/icons/alert.png" alt="" role="presentation" />
-                        <p>Choose your start date to pay</p>
-                    </div>
-                </section>
+                <div class="tablet-grid-1">
+                    <div>
+                        <section class="choose-date" aria-label="Choose your start date">
+                            <div class="flex j-between choose-top">
+                                <p>Start date</p>
+                                <button>Choose your start date</button>
+                            </div>
+                        
+                            <div class="alert-info flex">
+                                <img src="assets/icons/alert.png" alt="" role="presentation" />
+                                <p>Choose your start date to pay</p>
+                            </div>
+                        </section>
 
-                <section class="apply-discount" aria-label="apply-discount-code">
-                    <h2 id="apply-discount-code">Discount code</h2>
-                    <div class="j-between">
-                        <div>
-                            <p>247LOVE4U</p>
-                            <p>Code successfully applied.</p>
-                        </div>
-                        <button>Remove code</button>
+                        <section class="apply-discount" aria-label="apply-discount-code">
+                            <h2 id="apply-discount-code">Discount code</h2>
+                            <div class="j-between">
+                                <div>
+                                    <p>247LOVE4U</p>
+                                    <p>Code successfully applied.</p>
+                                </div>
+                                <button>Remove code</button>
+                            </div>
+                        </section>
                     </div>
-                </section>
+                        <section class="order-summary-wrap" aria-label="order summary">
+                            <div class="order-summary">
+                                <p class="flex j-between">
+                                    <span>Subtotal</span>
+                                    <span>₦112,000.00</span>
+                                </p>
+                                <p class="flex j-between">
+                                    <span>Discount applied (25% off)</span>
+                                    <span class="green-text">- ₦28,000</span>
+                                </p>  
+                                <p class="flex j-between total">
+                                    <span>Total</span>
+                                    <span class="bold">₦102,000.00</span>
+                                </p>
+                            </div> 
+                            <p class="info">This amount covers your<br> subscription for the next 4 weeks.</p>    
+                            
+                            <div class="alert-info-dark">
+                                <img src="assets/icons/alert-black.png" alt="" role="presentation" />
+                                <p>Your subscription amount for subsequent months will be ₦112,000.</p>
+                            </div>
+                            <button class="view green-btn">View Laundry Frequency</button>
 
-                <section class="order-summary-wrap" aria-label="order summary">
-                    <div class="order-summary">
-                        <p class="flex j-between">
-                            <span>Subtotal</span>
-                            <span>₦112,000.00</span>
-                        </p>
-                        <p class="flex j-between">
-                            <span>Discount applied (25% off)</span>
-                            <span class="green-text">- ₦28,000</span>
-                        </p>  
-                        <p class="flex j-between total">
-                            <span>Total</span>
-                            <span class="bold">₦102,000.00</span>
-                        </p>
-                    </div> 
-                    <p class="info">This amount covers your<br> subscription for the next 4 weeks.</p>    
+                            <p class="customize">Not what you want? <a class="green-text">Customise your plan.</a></p>
+                        </section>
                     
-                    <div class="alert-info-dark">
-                        <img src="assets/icons/alert-black.png" alt="" role="presentation" />
-                        <p>Your subscription amount for subsequent months will be ₦112,000.</p>
-                    </div>
-                    <button class="view green-btn">View Laundry Frequency</button>
-
-                    <p class="customize">Not what you want? <a class="green-text">Customise your plan.</a></p>
-                </section>
+                </div>
             </div>
             <section class="profile-completed" aria-label="your eden profile is completed">
-                <img src="assets/icons/emoji.png" alt="" role="presentation" />
-                <p class="title">Your Eden profile has been completed, Aderinsola!</p>
-                <p class="sub-title">You're one step closer to starting your easy life with Eden.</p>
-                <button class="green-btn go-home">Go home</button>
+                <div class="profile-inner">
+                    <img src="assets/icons/emoji.png" alt="" role="presentation" />
+                    <p class="title">Your Eden profile has been completed, Aderinsola!</p>
+                    <p class="sub-title">You're one step closer to starting your easy life with Eden.</p>
+                    <a class="green-btn go-home flex j-center" href="/home.html">Go home</a>
+                </div>
             </section>
         </main>
         <script src="script.js"></script> 

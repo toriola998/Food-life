@@ -328,6 +328,11 @@ body {
     font-family: var(--pry-font);
 }
 
+a.green-btn {
+    //border: 0;
+    text-decoration: none;
+}
+
 .customize {
     text-align: center;
     font-size: 0.875rem;
@@ -345,12 +350,18 @@ nav ul img{
     margin: auto;
 }
 
+.profile-inner {
+    max-width: 350px;
+    margin: auto;
+}
+
 .profile-completed .title {
     font-family: var(--sec-font);
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--black-2);
     line-height: 2rem;
+    margin-top: 2rem;
 }
 
 .profile-completed p {
@@ -691,5 +702,36 @@ nav ul span:not(.green-text) {
     .cleaning-modal {
         max-height: inherit;
         overflow-y: unset;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .home {
+        padding: 0 15%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .home {
+        padding: 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .plan-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .plan-wrapper,
+    .tablet-grid-1 {
+        display: grid;
+    }
+
+    .tablet-grid-1 {
+        margin: 3rem 0;
+        grid-template-columns: 43% 45%;
+        justify-content: space-between;
     }
 }
