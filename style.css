@@ -107,24 +107,11 @@ body {
 }
 
 .home h1 {
-    /*REMOVE THIS MARGIN TOP LATER**/
-    margin-top: 2rem;
-
     font-family: var(--sec-font);
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 2rem;
 }
-
-/* .top-wrap p,
-.summary,
-.plan p:nth-child(2),
-.choose-top p,
-.apply-discount p:nth-child(1),
-.apply-discount p:nth-child(2),
-.order-summary p {
-    font-family: var(--pry-font);
-} */
 
 .apply-discount h2,
 .plan-details h2,
@@ -474,16 +461,11 @@ nav ul img{
     right: 0;
 }
 
-/* .dashboard >div {
-    padding: 1rem 1rem 0 1rem;
-} */
-
 .food-delivery.green {
     border: 1px solid #6ECE8A;
     margin: 1.5rem 0;
     background-color: var(--light-green-2);
 }
-
 
 .cleaning.orange {
     border: 1px solid #FFC260;
@@ -611,7 +593,6 @@ nav ul span:not(.green-text) {
 
 .food-delivery-modal {
     padding-bottom: 9rem !important;
-    /* display: none; */
 }
 
 .modal {
@@ -631,7 +612,6 @@ nav ul span:not(.green-text) {
     animation-name: modalActive;
     animation-duration: 0.2s;
 }
-
 
 .modal .date,
 .small-text {
@@ -740,13 +720,16 @@ nav ul span:not(.green-text) {
     .dashboard-inner-wrapper {
         padding: 2rem 15% 0;
     }
+
+    .home {
+        max-width: 900px;
+        margin: 0 auto;
+    }   
 }
 
 @media only screen and (min-width: 760px) {
     .home {
-        padding: 2rem 0 0;
-        max-width: 900px;
-        margin: 0 auto;
+        padding: 2rem 5% 0;
     }
 
     .plan-wrapper {
@@ -831,4 +814,50 @@ nav ul span:not(.green-text) {
     left: 0;
     border: 0.1px dashed #6ECE8A;
 }
-  
+
+ul.home-timeline {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 37px 0 40px; 
+}
+
+ul.home-timeline span:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: rem;
+    height: 28px;
+    width: 28px;
+}
+
+ul.home-timeline .green-num{
+    background-color: var(--green-1);
+    color: #fff;
+    position: relative;
+    margin: auto;
+}
+
+ul.home-timeline .grey-num{
+    background-color: #F0F4F2;
+    margin: auto;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+ul.home-timeline span:nth-child(3){
+    font-size: 13px;
+}
+
+/* ul.home-timeline .green-num::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: var(--green-1);
+} */
