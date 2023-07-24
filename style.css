@@ -339,7 +339,8 @@ body {
     font-weight: 500;
 }
 
-.profile-completed img{
+.profile-completed img,
+ul img{
     display: block;
     margin: auto;
 }
@@ -539,4 +540,30 @@ body {
     color: #000;
     font-weight: 400;
     padding: 1.125rem 0 1rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.7rem;
+    padding: 0.7rem 0 2rem;
+    box-shadow: 0px 1px 0px 0px #F1F4F2 inset;
+}
+
+ul .green-text {
+    font-weight: 500;
+}
+
+ul span {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1rem;
+    padding-top: .5rem;
+    display: flex;
+}
+
+ul span:not(.green-text) {
+    color: #8AA398;
 }
