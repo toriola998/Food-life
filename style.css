@@ -577,14 +577,18 @@ nav ul span:not(.green-text) {
     left: 0;
 }
 
+.food-delivery-modal {
+    padding-bottom: 9rem !important;
+}
+
 .modal {
     z-index: 10;
     background-color: #fff;
     border-radius: 1rem;
     padding: 1.25rem;
-    min-height: 550px;
-    position: absolute;
-    bottom: 3.37rem;
+    /* min-height: 550px; */
+    /* position: absolute;
+    bottom: 3.37rem; */
     margin: 0 0.625rem;
 }
 
@@ -618,13 +622,18 @@ nav ul span:not(.green-text) {
     margin: 2rem 0 0 0;
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 2rem;
 }
 
-.food-delivery-modal .address {
+.modal .address {
     border-radius: 8px;
     border: 1px dashed var(--grey-2);
-    padding: 0.75rem;
+    padding: 0.75rem 0;
+}
+
+.modal .address p {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .address-2,
@@ -644,4 +653,43 @@ nav ul span:not(.green-text) {
     color: var(--black-1);
     display: flex;
     padding-top: .3rem;
+}
+
+.cleaner {
+    border-top: 1px dashed var(--grey-2);
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.cleaning-modal {
+    max-height: 520px;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    padding: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--green-quaternary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+  }
+
+@media only screen and (min-width: 1000px) {
+    .cleaning-modal {
+        max-height: inherit;
+        overflow-y: unset;
+    }
 }
