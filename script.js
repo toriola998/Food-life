@@ -52,7 +52,11 @@ if(confetti) {
     // document.addEventListener('DOMContentLoaded', function () {
     //     confetti.style.display = "none"
     // })
-    confetti.style.display = "block"
+
+    if(completed) {
+        confetti.style.display = "block"
+    }
+    
     setTimeout(() => {
         confetti.style.display = "none"
     }, 4000)
