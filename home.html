@@ -9,7 +9,7 @@
         <title>Eden life</title> 
     </head>
     <body class="dashboard">
-        <heading>
+        <!-- <heading>
             <div class="heading-top flex j-between">
                 <div class="flex">
                     <button>
@@ -97,7 +97,49 @@
                     <span>Gardener</span>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+
+        <div class="overlay">
+            <div class="food-delivery-modal modal">
+                <div class="flex j-between">
+                    <p class="date">Mon, 08 Sep 2021</p>
+                    <button class="flex j-center back">
+                        <img src="assets/icons/close.png" alt="Close modal" />
+                    </button>
+                </div>
+
+                <div class="flex order">
+                    <img src="assets/icons/food-3.png" alt="" role="presentation" width="32" class="mr-2"/>
+                    <div>
+                        <p class="small-text">Order Status</p>
+                        <p class="normal-text">Order has arrived</p>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <p class="small-text">Delivery Address</p>
+                    <p class="address-2">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+                </div>
+
+               <div class="order-status">
+                    <p>
+                        <span class="flex j-between">
+                            <span class="normal-text">Order has arrived</span>
+                            <time class="small-text">10:56 AM</time>
+                        </span>
+                        <span class="order-note">Your order has arrived at your location. Pick it up!</span>
+                    </p>
+
+                    <p>
+                        <span class="flex j-between">
+                            <span class="normal-text">Order on the way</span>
+                            <time class="small-text">10:56 AM</time>
+                        </span>
+                        <span class="order-note">Your order has been dispatched and is on the way to you.</span>
+                    </p>
+               </div>
+            </div>
+        </div>
         <script src="script.js"></script> 
     </body>
 </html>

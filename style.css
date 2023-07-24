@@ -340,7 +340,7 @@ body {
 }
 
 .profile-completed img,
-ul img{
+nav ul img{
     display: block;
     margin: auto;
 }
@@ -445,9 +445,9 @@ ul img{
     right: 0;
 }
 
-.dashboard >div {
+/* .dashboard >div {
     padding: 1rem 1rem 0 1rem;
-}
+} */
 
 .food-delivery.green {
     border: 1px solid #6ECE8A;
@@ -542,7 +542,7 @@ ul img{
     padding: 1.125rem 0 1rem;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -551,11 +551,11 @@ ul {
     box-shadow: 0px 1px 0px 0px #F1F4F2 inset;
 }
 
-ul .green-text {
+nav ul .green-text {
     font-weight: 500;
 }
 
-ul span {
+nav ul span {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -564,6 +564,84 @@ ul span {
     display: flex;
 }
 
-ul span:not(.green-text) {
+nav ul span:not(.green-text) {
     color: #8AA398;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal {
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    min-height: 550px;
+    position: absolute;
+    bottom: 3.37rem;
+    margin: 0 0.625rem;
+}
+
+.food-delivery-modal .date,
+.small-text {
+    color: var(--black-1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.modal .back {
+    margin-right: 0;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.normal-text {
+    color: var(--black-2);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.order {
+    margin: 1.5rem 0 1.25rem;
+}
+
+.order-status {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.food-delivery-modal .address {
+    border-radius: 8px;
+    border: 1px dashed var(--grey-2);
+    padding: 0.75rem;
+}
+
+.address-2,
+.order-note {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    
+ }
+
+.address-2 {
+    color: var(--black-2);
+    padding-top: .5rem;
+}
+
+.order-note {
+    color: var(--black-1);
+    display: flex;
+    padding-top: .3rem;
 }
