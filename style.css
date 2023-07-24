@@ -715,9 +715,18 @@ nav ul span:not(.green-text) {
 }
 
 .all-done p::before,
-.half-done p:nth-child(2):before {
+.half-done p:nth-child(1)::before,
+.half-done p:nth-child(2):before,
+.all-done p:not(:last-child)::after,
+.half-done p:nth-child(1):after,
+ul.home-timeline .green-num::after,
+ul.home-timeline .grey-num-3::after {
     content: "";
     position: absolute;
+}
+
+.all-done p::before,
+.half-done p:nth-child(2):before {
     top: 5px;
     left: 0;
     transform: rotate(45deg);
@@ -727,9 +736,7 @@ nav ul span:not(.green-text) {
     border-right: 2.3px solid var(--green);
   }
 
-  .half-done p:nth-child(1):before{
-    content: "";
-    position: absolute;
+  .half-done p:nth-child(1)::before{
     width: 8px;
     height: 8px;
     background: white;
@@ -741,8 +748,6 @@ nav ul span:not(.green-text) {
 
 .all-done p:not(:last-child)::after,
 .half-done p:nth-child(1):after {
-    content: "";
-    position: absolute;
     display: block;
     width: 0px;
     height: 37px;
@@ -774,8 +779,7 @@ ul.home-timeline .green-num{
     color: #fff;
     position: relative;
     margin: auto;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 
 ul.home-timeline .grey-num{
@@ -795,8 +799,6 @@ ul.home-timeline span:nth-child(3){
 }
 
 ul.home-timeline .green-num::after {
-    content: "";
-    position: absolute;
     display: block;
     width: 31vw;
     height: 3px;
@@ -810,8 +812,6 @@ ul.home-timeline .grey-num-3 {
 }
 
 ul.home-timeline .grey-num-3::after {
-    content: "";
-    position: absolute;
     display: block;
     width: 25vw;
     height: 3px;
