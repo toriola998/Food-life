@@ -42,7 +42,7 @@
                                 <h2>Food Delivery</h2>
                                 <img src="assets/icons/food.png" alt="" role="presentation" />
                             </div>
-                            <button class="view-status flex bg-green">View status
+                            <button class="view-status flex bg-green view-food">View status
                                 <img src="assets/icons/arrow-right-green.png" alt="" role="presentation" height="16" width="16"/>
                             </button>
                         </div>
@@ -66,7 +66,7 @@
                                 <h2>Home delivery</h2>
                                 <img src="assets/icons/cleaning.png" alt="" role="presentation" />
                             </div>
-                            <button class="view-status flex bg-orange">View status
+                            <button class="view-status flex bg-orange view-cleaning">View status
                                 <img src="assets/icons/arrow-right-orange.png" alt="" role="presentation" height="16" width="16"/>
                             </button>
                         </div>
@@ -102,12 +102,12 @@
         </div>
 
         <!--MODALS--->
-        <div class="overlay flex j-center">
+        <div class="overlay flex j-center food-overlay">
             <!--FOOD DELIVERY MODAL-->
             <div class="food-delivery-modal modal">
                 <div class="flex j-between">
                     <p class="date">Mon, 08 Sep 2021</p>
-                    <button class="flex j-center back">
+                    <button class="flex j-center back close-food-btn">
                         <img src="assets/icons/close.png" alt="Close modal" />
                     </button>
                 </div>
@@ -146,11 +146,11 @@
         </div>
 
             <!--HOUSE CLEANING MODAL-->
-        <div class="overlay flex j-center">
+        <div class="overlay flex j-center cleaning-overlay">
             <div class="cleaning-modal modal">
                 <div class="flex j-between">
                     <p class="date">Mon, 08 Sep 2021</p>
-                    <button class="flex j-center back">
+                    <button class="flex j-center back close-cleaning-btn">
                         <img src="assets/icons/close.png" alt="Close modal" />
                     </button>
                 </div>
@@ -207,6 +207,6 @@
                </div>
             </div>
         </div>
-        <script src="script.js"></script> 
+        <script src="./script.js"></script> 
     </body>
 </html>

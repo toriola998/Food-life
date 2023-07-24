@@ -582,7 +582,7 @@ nav ul span:not(.green-text) {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     right: 0;
@@ -593,7 +593,7 @@ nav ul span:not(.green-text) {
 
 .food-delivery-modal {
     padding-bottom: 9rem !important;
-    display: none;
+    /* display: none; */
 }
 
 .modal {
@@ -607,7 +607,7 @@ nav ul span:not(.green-text) {
     margin: 0 0.625rem;
 }
 
-.food-delivery-modal .date,
+.modal .date,
 .small-text {
     color: var(--black-1);
     font-size: 12px;
@@ -755,5 +755,10 @@ nav ul span:not(.green-text) {
 
     .get-ready {
         margin-bottom: 10%;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        padding-top: 1rem;
     }
 }
