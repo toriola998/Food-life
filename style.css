@@ -714,9 +714,7 @@ nav ul span:not(.green-text) {
 .half-done p:nth-child(1)::before,
 .half-done p:nth-child(2):before,
 .all-done p:not(:last-child)::after,
-.half-done p:nth-child(1):after,
-ul.home-timeline .green-num::after,
-ul.home-timeline .grey-num-3::after {
+.half-done p:nth-child(1):after {
     content: "";
     position: absolute;
 }
@@ -768,6 +766,7 @@ ul.home-timeline span:nth-child(1){
     padding: rem;
     height: 28px;
     width: 28px;
+
 }
 
 ul.home-timeline .green-num{
@@ -792,28 +791,7 @@ ul.home-timeline span:nth-child(3){
     font-size: 13px;
     margin-top: -7px;
     display: flex;
-}
-
-ul.home-timeline .green-num::after {
-    display: block;
-    width: 31vw;
-    height: 3px;
-    background-color: var(--green-1);
-    z-index: -1;
-    left: 0;
-}
-
-ul.home-timeline .grey-num-3 {
-    position: relative;
-}
-
-ul.home-timeline .grey-num-3::after {
-    display: block;
-    width: 25vw;
-    height: 3px;
-    background-color: var(--grey-3);
-    z-index: -1;
-    left: 0;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -878,14 +856,32 @@ ul.home-timeline .grey-num-3::after {
         max-height: inherit;
         overflow-y: unset;
     }
-
-    ul.home-timeline .grey-num-3::after {
-        width: 22vw;
-    }
 }
 
-@media only screen and (min-width: 1200px) {
-    ul.home-timeline .grey-num-3::after {
-        width: 15vw;
-    }
+ul.home-timeline li {
+    width: 100%;
+    position: relative;
 }
+
+ul.home-timeline li:nth-child(1)::after,
+ul.home-timeline li:nth-child(2)::after,
+ul.home-timeline li:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 3px;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    top: 12px;
+    left: 50%;
+}
+
+ul.home-timeline li:nth-child(1)::after,
+ul.home-timeline li:nth-child(2)::after {
+    background-color: var(--green-1);
+}
+
+ul.home-timeline li:nth-child(3)::after {
+    background-color: var(--grey-3);
+} 
