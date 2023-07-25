@@ -2,13 +2,6 @@ const home = document.querySelector('.home');
 const viewBtn = document.querySelector('.view')
 const completed = document.querySelector('.profile-completed');
 
-if(home && completed) {
-    viewBtn.addEventListener("click", () => {
-        home.style.display = "none";
-        completed.style.display = "block"
-    })
-}
-
 const viewFoodBtn = document.querySelector('.view-food');
 const viewCleaningBtn = document.querySelector('.view-cleaning')
 const foodModal = document.querySelector('.food-overlay')
@@ -48,17 +41,7 @@ if(closeCleaningBtn) {
 //REMOVE GIF AFTER PAGE LOADS
 const confetti = document.querySelector('.confetti');
 if(confetti) {
-    /////////PAGE LOADS REALLY FAST, GIF WON'T SHOW AT ALL
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     confetti.style.display = "none"
-    // })
-
-    if(completed) {
-        confetti.style.display = "block"
-    }
-    
-    setTimeout(() => {
+    document.addEventListener('DOMContentLoaded', function () {
         confetti.style.display = "none"
-    }, 4000)
-
+    })
 }

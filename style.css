@@ -379,10 +379,6 @@ nav ul img{
     margin: 0.75rem 0 5rem;
 }
 
-.profile-completed {
-    display: none;
-}
-
 .heading-top h1 {
     font-family: var(--sec-font);
     font-size: 1.125rem;
